@@ -2,6 +2,8 @@ import os, time
 
 src = "./AutoSort/"
 dest = "./Result/"
+os.makedirs(src, exist_ok=True)
+os.makedirs(dest, exist_ok=True)
 
 fileList = os.listdir(src)
 for fileName in fileList:
